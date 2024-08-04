@@ -1,0 +1,55 @@
+[versions]
+activityCompose = "1.9.1"
+androidGradlePlugin = "8.0.0"
+androidxJunit = "1.1.4"
+converterGson = "2.9.0"
+espressoCore = "3.6.1"
+espressoCoreVersion = "3.5.0"
+gradle = "8.0.2"
+hiltAndroid = "2.49"
+hiltNavigationCompose = "1.2.0"
+hiltNavigationComposeVersion = "1.0.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+kotlin = "1.8.10"
+hilt = "2.44"
+kotlinGradlePlugin = "1.8.10"
+kotlinxCoroutinesAndroid = "1.7.3"
+lifecycleViewmodelCompose = "2.8.4"
+navigationCompose = "2.7.7"
+navigationComposeVersion = "2.5.1"
+runtimeLivedata = "1.6.8"
+material3Android = "1.2.1"
+uiToolingPreview = "1.6.8"
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+
+[libraries]
+activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCore" }
+espresso-core-v350 = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
+ext-junit = { module = "androidx.test.ext:junit", version.ref = "junitVersion" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-android-gradle-plugin = { module = "com.google.dagger:hilt-android-gradle-plugin", version.ref = "hilt" }
+hilt-android-v249 = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+hilt-navigation-compose-v100 = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationComposeVersion" }
+junit = { module = "junit:junit", version.ref = "junit" }
+junit-v114 = { module = "androidx.test.ext:junit", version.ref = "androidxJunit" }
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinGradlePlugin" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
+lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleViewmodelCompose" }
+lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelCompose" }
+navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+navigation-compose-v251 = { module = "androidx.navigation:navigation-compose", version.ref = "navigationComposeVersion" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "converterGson" }
+runtime-livedata = { group = "androidx.compose.runtime", name = "runtime-livedata", version.ref = "runtimeLivedata" }
+material3-android = { group = "androidx.compose.material3", name = "material3-android", version.ref = "material3Android" }
+ui = { module = "androidx.compose.ui:ui", version.ref = "uiToolingPreview" }
+ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "uiToolingPreview" }
